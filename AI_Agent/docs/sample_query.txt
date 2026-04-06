@@ -1,0 +1,23 @@
+Introduction to Retrieval-Augmented Generation (RAG)
+
+Retrieval-Augmented Generation (RAG) is a technique in natural language processing that combines a retrieval system with a generative language model. Instead of relying solely on the parametric knowledge stored in model weights, RAG systems dynamically retrieve relevant documents or passages from an external knowledge base and provide them as context to the language model before generating a response.
+
+Architecture Overview:
+1. Query Encoding – The user query is encoded into a vector using an embedding model.
+2. Vector Search – The encoded query is compared against a vector database (e.g., FAISS, ChromaDB) to retrieve the top-K most semantically similar documents.
+3. Augmented Generation – The retrieved documents are concatenated with the query and passed to the LLM as context, enabling grounded, factual responses.
+
+Benefits:
+- Reduces hallucination compared to vanilla LLMs.
+- Allows knowledge to be updated without retraining the model.
+- Enables domain-specific question answering.
+
+Applications:
+- Customer support chatbots
+- Legal and medical document analysis
+- Academic research assistants
+- Enterprise knowledge management
+
+This project implements a RAG pipeline using FAISS for vector storage,
+sentence-transformers (MiniLM-L6-v2) for local embeddings, and OpenAI GPT models for generation,
+all orchestrated through the LangChain framework.
