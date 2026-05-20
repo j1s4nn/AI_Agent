@@ -1,4 +1,4 @@
-# 🤖 Autonomous AI Research Agent
+# Autonomous AI Research Agent
 
 **Built by Jisan** | B.Sc. Artificial Intelligence, NUIST  
 *Stack: Python · LangChain · FAISS · FastAPI · Streamlit · OpenAI API*
@@ -9,11 +9,11 @@
 
 An end-to-end autonomous AI agent that can:
 
-- 🔍 **Search the web** in real time (DuckDuckGo, no API key needed)
-- 📄 **Answer questions from your documents** (PDF, DOCX, TXT) using RAG
-- 🧠 **Remember the conversation** with multi-turn memory
-- ⚡ **Reason step-by-step** using LangChain's ReAct agent framework
-- 🖥️ **Interactive UI** via Streamlit + REST API via FastAPI
+- **Search the web** in real time (DuckDuckGo, no API key needed)
+- **Answer questions from your documents** (PDF, DOCX, TXT) using RAG
+- **Remember the conversation** with multi-turn memory
+- **Reason step-by-step** using LangChain's ReAct agent framework
+- **Interactive UI** via Streamlit + REST API via FastAPI
 
 ---
 
@@ -81,8 +81,8 @@ This starts both servers simultaneously:
 
 | Service | URL |
 |---------|-----|
-| 🖥️ Streamlit UI | http://localhost:8501 |
-| ⚙️ FastAPI Docs | http://localhost:8000/docs |
+| Streamlit UI | http://localhost:8501 |
+| FastAPI Docs | http://localhost:8000/docs |
 
 ---
 
@@ -142,7 +142,7 @@ After uploading `docs/sample_query.txt`:
 | Component | Minimum | This Project Tested On |
 |-----------|---------|----------------------|
 | RAM | 8 GB | 16 GB |
-| GPU | Not required | RTX 3060 ✅ |
+| GPU | Not required | RTX 3060 |
 | Python | 3.10+ | 3.10+ |
 | OS | Windows/Linux/Mac | Windows 11 |
 
