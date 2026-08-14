@@ -38,11 +38,10 @@ ConversationBufferMemory  (multi-turn context)
 
 ## Setup Instructions
 
-### Step 1 – Clone / unzip the project
+### Step 1 – Clone the repository
 
 ```bash
-cd C:\Users\jisan\OneDrive\Desktop\
-# unzip AI_Agent.zip here, then:
+git clone https://github.com/j1s4nn/AI_Agent.git
 cd AI_Agent
 ```
 
@@ -62,7 +61,13 @@ pip install -r requirements.txt
 
 ### Step 4 – Set your OpenAI API key
 
-Open `.env` and replace the placeholder:
+Copy the example environment file and add your key:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` and replace the placeholder:
 
 ```
 OPENAI_API_KEY=sk-your-actual-key-here
@@ -119,7 +124,8 @@ AI_Agent/
 ├── streamlit_app.py        ← Streamlit frontend UI
 ├── run.py                  ← One-command launcher
 ├── requirements.txt        ← All dependencies
-├── .env                    ← API keys (DO NOT commit to GitHub)
+├── .env.example            ← Template for environment variables
+├── .env                    ← Your actual API keys (DO NOT commit)
 ├── .gitignore
 └── README.md
 ```
