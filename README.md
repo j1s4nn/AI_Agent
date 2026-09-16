@@ -167,6 +167,28 @@ After uploading `docs/sample_query.txt`:
 
 ---
 
+## Technology Stack
+
+`Python` · `LangChain` (ReAct agent) · `OpenAI API` (gpt-4o-mini) · `FAISS` (vector store) · `sentence-transformers` (all-MiniLM-L6-v2 embeddings) · `DuckDuckGo Search` · `FastAPI` · `Uvicorn` · `Streamlit` · `pypdf` / `python-docx` (document loaders)
+
+## Evaluation & Limitations
+
+This is a service rather than a benchmarked model, so there is no accuracy
+table. It was validated functionally: the agent correctly routes document
+questions to the RAG tool and live questions to web search, preserves
+multi-turn context, and exposes a complete reasoning trace. Known limitations:
+retrieval quality depends on the MiniLM embedding and chunking strategy; the
+agent inherits gpt-4o-mini's reasoning limits; and there is no automated
+end-to-end evaluation harness yet.
+
+## Future Improvements
+
+- Add an evaluation harness (e.g., a RAG QA benchmark) to report retrieval and answer quality instead of relying on manual checks
+- Cross-encoder re-ranking of retrieved chunks for borderline queries
+- Configurable chunk size / overlap and a persistence layer for the vector store
+- Swap the OpenAI dependency for a local LLM (llama.cpp) to run fully offline
+- Tool-use guardrails and rate limiting for the web-search tool
+
 ## License
 
 MIT License – free to use, modify, and distribute.
