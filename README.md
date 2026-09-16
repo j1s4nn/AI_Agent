@@ -1,7 +1,20 @@
 # Autonomous AI Research Agent
 
-**Built by Jisan** | B.Sc. Artificial Intelligence, NUIST  
-*Stack: Python · LangChain · FAISS · FastAPI · Streamlit · OpenAI API*
+**Md Jisan Hossen** — B.Sc. Artificial Intelligence, NUIST
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-ReAct-1C3C3A?logo=langchain&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-backend-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-UI-FF4B4B?logo=streamlit&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+> A ReAct agent that decides **on its own** whether to answer from your documents (RAG over FAISS) or from the live web — with multi-turn memory and a fully exposed reasoning trace.
+
+---
+
+## Motivation
+
+Most "chat with your PDF" demos do exactly one thing: retrieval. Real research questions mix private context ("what did this paper claim?") with live information ("what changed in LangChain this month?"). This project builds an agent that *routes* between the two sources autonomously using LangChain's ReAct (Reason + Act) loop, and — importantly for trust and debugging — surfaces every intermediate thought/action step in the UI rather than hiding the chain of reasoning.
 
 ---
 
